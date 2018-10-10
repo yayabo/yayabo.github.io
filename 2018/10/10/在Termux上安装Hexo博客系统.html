@@ -106,31 +106,25 @@
 
 
 
-  <meta name="description" content="前面掌叔给大家简要介绍了通过安装Momentics IDE和Cordova以命令行的方式进行bb10应用的开发编译。（https://iniche.cn/63）因为全程涉及到的安装和命令步骤过于繁琐，估计已经有一部分同学望而却步了。那么有没有一种界面化、操作简单的方式呢？答案是有的。今天掌叔就带大家一起来看看黑莓官方的bb10应用开发工具：WebWorks SDK。  首先我们先到黑莓开发者官网下">
+  <meta name="description" content="首先要先安装好Nodejs，然后使用npm安装Hexo，    npm install hexo-cli -g安装好之后创建博客的目录    hexo init blog进入刚才创建的目录">
+<meta name="keywords" content="Termux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用WebWorks SDK开发Blackberry10应用">
-<meta property="og:url" content="https://www.iniche.cn/2018/09/19/使用WebWorks SDK开发Blackberry10应用.html">
+<meta property="og:title" content="在Termux上安装Hexo博客系统">
+<meta property="og:url" content="https://www.iniche.cn/2018/10/10/在Termux上安装Hexo博客系统.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="前面掌叔给大家简要介绍了通过安装Momentics IDE和Cordova以命令行的方式进行bb10应用的开发编译。（https://iniche.cn/63）因为全程涉及到的安装和命令步骤过于繁琐，估计已经有一部分同学望而却步了。那么有没有一种界面化、操作简单的方式呢？答案是有的。今天掌叔就带大家一起来看看黑莓官方的bb10应用开发工具：WebWorks SDK。  首先我们先到黑莓开发者官网下">
+<meta property="og:description" content="首先要先安装好Nodejs，然后使用npm安装Hexo，    npm install hexo-cli -g安装好之后创建博客的目录    hexo init blog进入刚才创建的目录">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/webworks2_2_gold.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/启动webwordkssdk-300x144.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/创建项目-300x165.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/配置项目-300x166.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/编译安装-300x167.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/启动成功-224x300.jpg">
-<meta property="og:updated_time" content="2018-10-08T07:26:13.516Z">
+<meta property="og:updated_time" content="2018-10-10T07:59:16.573Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用WebWorks SDK开发Blackberry10应用">
-<meta name="twitter:description" content="前面掌叔给大家简要介绍了通过安装Momentics IDE和Cordova以命令行的方式进行bb10应用的开发编译。（https://iniche.cn/63）因为全程涉及到的安装和命令步骤过于繁琐，估计已经有一部分同学望而却步了。那么有没有一种界面化、操作简单的方式呢？答案是有的。今天掌叔就带大家一起来看看黑莓官方的bb10应用开发工具：WebWorks SDK。  首先我们先到黑莓开发者官网下">
-<meta name="twitter:image" content="https://iniche.cn/wp-content/uploads/2018/09/webworks2_2_gold.png">
+<meta name="twitter:title" content="在Termux上安装Hexo博客系统">
+<meta name="twitter:description" content="首先要先安装好Nodejs，然后使用npm安装Hexo，    npm install hexo-cli -g安装好之后创建博客的目录    hexo init blog进入刚才创建的目录">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.iniche.cn/2018/09/19/使用WebWorks SDK开发Blackberry10应用.html"/>
+  <link rel="canonical" href="https://www.iniche.cn/2018/10/10/在Termux上安装Hexo博客系统.html"/>
 
 
 
@@ -140,7 +134,7 @@
   };
 </script>
 
-  <title>使用WebWorks SDK开发Blackberry10应用 | 久智网</title>
+  <title>在Termux上安装Hexo博客系统 | 久智网</title>
   
 
 
@@ -289,7 +283,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/09/19/使用WebWorks SDK开发Blackberry10应用.html">
+    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/10/10/在Termux上安装Hexo博客系统.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="掌叔">
@@ -306,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用WebWorks SDK开发Blackberry10应用
+          <h1 class="post-title" itemprop="name headline">在Termux上安装Hexo博客系统
               
             
           </h1>
@@ -331,46 +325,16 @@
                 
               
 
-              <time title="创建时间：2018-09-19 16:24:15" itemprop="dateCreated datePublished" datetime="2018-09-19T16:24:15+08:00">2018-09-19</time>
+              <time title="创建时间：2018-10-10 15:52:06 / 修改时间：15:59:16" itemprop="dateCreated datePublished" datetime="2018-10-10T15:52:06+08:00">2018-10-10</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-10-08 15:26:13" itemprop="dateModified" datetime="2018-10-08T15:26:13+08:00">2018-10-08</time>
               
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/开发手机应用/" itemprop="url" rel="index"><span itemprop="name">开发手机应用</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -399,7 +363,7 @@
       
 
       
-        <p>前面掌叔给大家简要介绍了通过安装Momentics IDE和Cordova以命令行的方式进行bb10应用的开发编译。（<a href="https://iniche.cn/63）因为全程涉及到的安装和命令步骤过于繁琐，估计已经有一部分同学望而却步了。那么有没有一种界面化、操作简单的方式呢？答案是有的。今天掌叔就带大家一起来看看黑莓官方的bb10应用开发工具：WebWorks" target="_blank" rel="noopener">https://iniche.cn/63）因为全程涉及到的安装和命令步骤过于繁琐，估计已经有一部分同学望而却步了。那么有没有一种界面化、操作简单的方式呢？答案是有的。今天掌叔就带大家一起来看看黑莓官方的bb10应用开发工具：WebWorks</a> SDK。 <a href="https://iniche.cn/wp-content/uploads/2018/09/webworks2_2_gold.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/webworks2_2_gold.png" alt=""></a> 首先我们先到黑莓开发者官网下载<a href="http://developer.blackberry.com/html5/download/" target="_blank" rel="noopener">WebWorks SDK安装包</a>。 掌叔的系统是windows10，安装起来一切顺利。装好之后我们点击图标它会启动一个命令行窗口同时在你的浏览器里打开如图界面： <a href="https://iniche.cn/wp-content/uploads/2018/09/启动webwordkssdk.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/启动webwordkssdk-300x144.png" alt=""></a> 接下来我们一步一步根据提示进行操作。 1、创建项目。 <a href="https://iniche.cn/wp-content/uploads/2018/09/创建项目.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/创建项目-300x165.png" alt=""></a> 2、配置项目，这里可以设置图标、启动图、开发者信息以及一些权限配置。 <a href="https://iniche.cn/wp-content/uploads/2018/09/配置项目.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/配置项目-300x166.png" alt=""></a> 3、接下来就可以编译安装了，点击左侧菜单的建立。输入手机锁屏密码和你令牌的密码。之后点击“建立和安装”。 <a href="https://iniche.cn/wp-content/uploads/2018/09/编译安装.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/编译安装-300x167.png" alt=""></a> 一切顺利的话就能看到你的手机已经启动这个应用了。 <a href="https://iniche.cn/wp-content/uploads/2018/09/启动成功.jpg" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/启动成功-224x300.jpg" alt=""></a></p>
+        <p>首先要先安装好Nodejs，然后使用npm安装Hexo，<br>    npm install hexo-cli -g<br>安装好之后创建博客的目录<br>    hexo init blog<br>进入刚才创建的目录</p>
 
       
     </div>
@@ -418,6 +382,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Termux/" rel="tag"># Termux</a>
+          
+        </div>
+      
 
       
       
@@ -427,8 +397,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/18/搭载KaiOS的手机JioPhone2手机已经发布.html" rel="next" title="搭载KaiOS的手机JioPhone2手机已经发布">
-                <i class="fa fa-chevron-left"></i> 搭载KaiOS的手机JioPhone2手机已经发布
+              <a href="/2018/09/30/通过电脑ssh登录手机termux.html" rel="next" title="通过电脑ssh登录手机termux">
+                <i class="fa fa-chevron-left"></i> 通过电脑ssh登录手机termux
               </a>
             
           </div>
@@ -436,10 +406,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/22/掌叔的第一部诺基亚手机NOKIA3510.html" rel="prev" title="掌叔的第一部诺基亚手机NOKIA3510">
-                掌叔的第一部诺基亚手机NOKIA3510 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
