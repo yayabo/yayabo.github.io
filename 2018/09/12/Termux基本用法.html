@@ -106,36 +106,30 @@
 
 
 
-  <meta name="description" content="1、下载安装BlackBerry Native SDK（官网下载） 打开刚装好的Momentics IDE，会提示要下载SDK，这时候电脑接上黑莓bb10手机，然后选择Connect a BlackBerry 10 device  下一步，输入手机密码，注意这一步一定要开启手机的开发者模式。  下一步选择API级别，默认就好，点击Install。  开始下载了。  然后我们进入安装目录bbndk双">
+  <meta name="description" content="1、打开新会话。有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的">
+<meta name="keywords" content="Termux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Cordova开发黑莓BlackBerry10应用">
-<meta property="og:url" content="https://www.iniche.cn/2018/09/14/使用Cordova开发黑莓BlackBerry10应用/index.html">
+<meta property="og:title" content="Termux基本用法">
+<meta property="og:url" content="https://www.iniche.cn/2018/09/12/Termux基本用法.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="1、下载安装BlackBerry Native SDK（官网下载） 打开刚装好的Momentics IDE，会提示要下载SDK，这时候电脑接上黑莓bb10手机，然后选择Connect a BlackBerry 10 device  下一步，输入手机密码，注意这一步一定要开启手机的开发者模式。  下一步选择API级别，默认就好，点击Install。  开始下载了。  然后我们进入安装目录bbndk双">
+<meta property="og:description" content="1、打开新会话。有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/1下载SDK-300x207.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/2输入手机密码-300x207.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/3选择api级别-300x207.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/4开始下载-300x207.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/账号登录-300x163.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/输入一个6到10位字符的密码-300x113.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/csk文件放到对应的目录里-300x73.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/生成证书-300x186.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/bar文件打包完毕-300x109.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/安装好了调试令牌-180x300.png">
-<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/cordova运行起来了-180x300.png">
+<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/termux侧划出session-169x300.jpg">
+<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/termux选择session-169x300.jpg">
+<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/修改session名称-169x300.jpg">
+<meta property="og:image" content="https://iniche.cn/wp-content/uploads/2018/09/修改后的session名称-169x300.jpg">
 <meta property="og:updated_time" content="2018-10-08T07:26:13.516Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用Cordova开发黑莓BlackBerry10应用">
-<meta name="twitter:description" content="1、下载安装BlackBerry Native SDK（官网下载） 打开刚装好的Momentics IDE，会提示要下载SDK，这时候电脑接上黑莓bb10手机，然后选择Connect a BlackBerry 10 device  下一步，输入手机密码，注意这一步一定要开启手机的开发者模式。  下一步选择API级别，默认就好，点击Install。  开始下载了。  然后我们进入安装目录bbndk双">
-<meta name="twitter:image" content="https://iniche.cn/wp-content/uploads/2018/09/1下载SDK-300x207.png">
+<meta name="twitter:title" content="Termux基本用法">
+<meta name="twitter:description" content="1、打开新会话。有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的">
+<meta name="twitter:image" content="https://iniche.cn/wp-content/uploads/2018/09/termux侧划出session-169x300.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.iniche.cn/2018/09/14/使用Cordova开发黑莓BlackBerry10应用/"/>
+  <link rel="canonical" href="https://www.iniche.cn/2018/09/12/Termux基本用法.html"/>
 
 
 
@@ -145,7 +139,7 @@
   };
 </script>
 
-  <title>使用Cordova开发黑莓BlackBerry10应用 | 久智网</title>
+  <title>Termux基本用法 | 久智网</title>
   
 
 
@@ -294,7 +288,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/09/14/使用Cordova开发黑莓BlackBerry10应用/">
+    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/09/12/Termux基本用法.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="掌叔">
@@ -311,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用Cordova开发黑莓BlackBerry10应用
+          <h1 class="post-title" itemprop="name headline">Termux基本用法
               
             
           </h1>
@@ -336,7 +330,7 @@
                 
               
 
-              <time title="创建时间：2018-09-14 18:20:27" itemprop="dateCreated datePublished" datetime="2018-09-14T18:20:27+08:00">2018-09-14</time>
+              <time title="创建时间：2018-09-12 10:31:18" itemprop="dateCreated datePublished" datetime="2018-09-12T10:31:18+08:00">2018-09-12</time>
             
 
             
@@ -370,7 +364,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/开发手机应用/" itemprop="url" rel="index"><span itemprop="name">开发手机应用</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/手机上编程/" itemprop="url" rel="index"><span itemprop="name">手机上编程</span></a></span>
 
                 
                 
@@ -404,7 +398,7 @@
       
 
       
-        <p>1、下载安装BlackBerry Native SDK（<a href="http://developer.blackberry.com/native/download/" target="_blank" rel="noopener">官网下载</a>） 打开刚装好的Momentics IDE，会提示要下载SDK，这时候电脑接上黑莓bb10手机，然后选择Connect a BlackBerry 10 device <a href="https://iniche.cn/wp-content/uploads/2018/09/1下载SDK.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/1下载SDK-300x207.png" alt=""></a> 下一步，输入手机密码，注意这一步一定要开启手机的开发者模式。 <a href="https://iniche.cn/wp-content/uploads/2018/09/2输入手机密码.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/2输入手机密码-300x207.png" alt=""></a> 下一步选择API级别，默认就好，点击Install。 <a href="https://iniche.cn/wp-content/uploads/2018/09/3选择api级别.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/3选择api级别-300x207.png" alt=""></a> 开始下载了。 <a href="https://iniche.cn/wp-content/uploads/2018/09/4开始下载.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/4开始下载-300x207.png" alt=""></a> 然后我们进入安装目录bbndk双击里面的bbndk-env_10_3_1_995.bat文件它会帮我们处理好系统环境设置。 2、安装完之后下一步我们来创建bbidtoken.csk令牌 首先我们要先创建一个黑莓开发者账户，这里掠过开发账户申请流程，我们假设看到这里的同学已经创建好了自己的黑莓开发者账号。 访问<a href="https://developer.blackberry.com/codesigning/" target="_blank" rel="noopener">https://developer.blackberry.com/codesigning/</a>用你的账号登录 <a href="https://iniche.cn/wp-content/uploads/2018/09/账号登录.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/账号登录-300x163.png" alt=""></a> 进入这个界面开始创建令牌，这里需要输入一个6至8位的密码。为了好记可以输入你黑莓开发者账号的密码。 <a href="https://iniche.cn/wp-content/uploads/2018/09/输入一个6到10位字符的密码.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/输入一个6到10位字符的密码-300x113.png" alt=""></a> 点击“获取令牌”之后浏览器就会自动下载一个bbidtoken.csk文件，根据页面提示我们将这个文件复制到％HOMEPATH％\ AppData \ Local \ Research In Motion这里。 <a href="https://iniche.cn/wp-content/uploads/2018/09/csk文件放到对应的目录里.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/csk文件放到对应的目录里-300x73.png" alt=""></a> 然后打开一个命令行窗口输入：C:\bbndk\host_10_3_1_12\win32\x86\usr\bin\blackberry-keytool -genkeypair -storepass 123456 -author iniche，执行成功后会在刚才令牌那个文件夹里生成一个author.p12文件。123456替换成你令牌的密码，iniche替换成你要的令牌作者名称，最好是英文名称。 <a href="https://iniche.cn/wp-content/uploads/2018/09/生成证书.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/生成证书-300x186.png" alt=""></a> 接下来我们来安装cordova，首先要先安装好nodejs，我们可以到nodejs的官网(<a href="https://nodejs.org/en/)去下载，nodejs有安装包，安装很简单，这里就不再赘述了。当然注意一下版本，掌叔用的是8.2.1版本的。" target="_blank" rel="noopener">https://nodejs.org/en/)去下载，nodejs有安装包，安装很简单，这里就不再赘述了。当然注意一下版本，掌叔用的是8.2.1版本的。</a> 装好nodejs之后我们打开一个CMD命令行窗口，在里面输入npm install -g <a href="mailto:cordova@6.1" target="_blank" rel="noopener">cordova@6.1</a>，电脑开始自动安装cordova需要文件，过一会就会提示安装完毕。 一切都装好之后下面就让我们来创建一个项目吧。 一次在命令行窗口输入如下命令： $ cordova create hello com.example.hello $ cd hello $ cordova platform add blackberry10 $ cordova build 如果一切顺利的话就能看到bar文件打包成功的提示，如下图。 <a href="https://iniche.cn/wp-content/uploads/2018/09/bar文件打包完毕.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/bar文件打包完毕-300x109.png" alt=""></a> 安装包已经打包成功了，接下来我们把应用部署到我们的手机里吧。 首先看一下我们手机的PIN码是多少，方法是系统设置-关于-类别选硬件。然后把PIN码记下来。然后把手机用USB线和电脑连接，在手机上进入安全和隐私-开发模式，打开开发模式。这里有一个IP地址我们也记下来。 下面我们在手机上安装调试令牌，并且安装应用。输入cd platforms\blackberry10\cordova回车切换到这个文件夹。然后输入run.bat –device –keystorepass mypassword，mypassword要替换成你令牌的密码。执行成功后就会在手机里安装调试令牌，并且自动帮你把刚才的hello项目安装到你的手机里了。一切正常话，应用汇自动启动，如下图这样： <a href="https://iniche.cn/wp-content/uploads/2018/09/安装好了调试令牌.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/安装好了调试令牌-180x300.png" alt=""></a> <a href="https://iniche.cn/wp-content/uploads/2018/09/cordova运行起来了.png" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/cordova运行起来了-180x300.png" alt=""></a></p>
+        <p>1、<strong>打开新会话</strong>。有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面： <a href="https://iniche.cn/wp-content/uploads/2018/09/termux侧划出session.jpg" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/termux侧划出session-169x300.jpg" alt=""></a> 然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。 <a href="https://iniche.cn/wp-content/uploads/2018/09/termux选择session.jpg" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/termux选择session-169x300.jpg" alt=""></a> 不过[1][2]容易忘记是什么意思。我们也可以改成我们想要的名字。方法是长按[1]或者[2]，然后输入你要名称，例如输入PHP。 <a href="https://iniche.cn/wp-content/uploads/2018/09/修改session名称.jpg" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/修改session名称-169x300.jpg" alt=""></a> 这样我们就能很清楚的分辨出哪一个会话是干什么的了。比如下面一个是PHP一个是MySql，一目了然。 <a href="https://iniche.cn/wp-content/uploads/2018/09/修改后的session名称.jpg" target="_blank" rel="noopener"><img src="https://iniche.cn/wp-content/uploads/2018/09/修改后的session名称-169x300.jpg" alt=""></a> 2、<strong>开关拓展键盘</strong>。我们都知道系统自带的输入法其实并不适合于开发人员。缺少了太多的按键。不过好在Termux替我们想到了这点，它自带一个拓展键盘，支持常用的ESC、TAB、CTRL、ATL以及方向键。开关拓展键盘的方法就是右划出的界面长按“KEYBOARD”。</p>
 
       
     </div>
@@ -423,6 +417,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Termux/" rel="tag"># Termux</a>
+          
+        </div>
+      
 
       
       
@@ -432,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/14/Termux上的文本编辑器/" rel="next" title="Termux上的文本编辑器">
-                <i class="fa fa-chevron-left"></i> Termux上的文本编辑器
+              <a href="/2018/09/11/Android系统上的Linux命令行环境Termux.html" rel="next" title="Android系统上的Linux命令行环境Termux">
+                <i class="fa fa-chevron-left"></i> Android系统上的Linux命令行环境Termux
               </a>
             
           </div>
@@ -442,8 +442,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/17/黑莓Z10又获系统更新/" rel="prev" title="黑莓Z10又获系统更新">
-                黑莓Z10又获系统更新 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/09/12/使用PAMP在塞班S60手机上运行PHP、Apache和MySql.html" rel="prev" title="使用PAMP在塞班S60手机上运行PHP、Apache和MySql">
+                使用PAMP在塞班S60手机上运行PHP、Apache和MySql <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
