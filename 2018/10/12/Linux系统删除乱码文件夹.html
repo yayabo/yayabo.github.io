@@ -106,18 +106,18 @@
 
 
 
-  <meta name="description" content="掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。 这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下： -inum 1999999 -exec rm &amp;#123;&amp;#125; -rf \;```12那么参数中这个1999999是什么呢？网上说这是索引节点。查看的方法是：`">
+  <meta name="description" content="掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。 这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下： -inum 1999999 -exec rm &amp;#123;&amp;#125; -rf \;```1234那么参数中这个1999999是什么呢？网上说这是索引节点。查看的方法是">
 <meta name="keywords" content="Termux,Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux系统删除乱码文件夹">
 <meta property="og:url" content="https://www.iniche.cn/2018/10/12/Linux系统删除乱码文件夹.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。 这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下： -inum 1999999 -exec rm &amp;#123;&amp;#125; -rf \;```12那么参数中这个1999999是什么呢？网上说这是索引节点。查看的方法是：`">
+<meta property="og:description" content="掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。 这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下： -inum 1999999 -exec rm &amp;#123;&amp;#125; -rf \;```1234那么参数中这个1999999是什么呢？网上说这是索引节点。查看的方法是">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-12T14:16:32.381Z">
+<meta property="og:updated_time" content="2018-10-12T14:20:03.431Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux系统删除乱码文件夹">
-<meta name="twitter:description" content="掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。 这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下： -inum 1999999 -exec rm &amp;#123;&amp;#125; -rf \;```12那么参数中这个1999999是什么呢？网上说这是索引节点。查看的方法是：`">
+<meta name="twitter:description" content="掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。 这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下： -inum 1999999 -exec rm &amp;#123;&amp;#125; -rf \;```1234那么参数中这个1999999是什么呢？网上说这是索引节点。查看的方法是">
 
 
 
@@ -341,7 +341,7 @@
                 
               
 
-              <time title="创建时间：2018-10-12 21:59:38 / 修改时间：22:16:32" itemprop="dateCreated datePublished" datetime="2018-10-12T21:59:38+08:00">2018-10-12</time>
+              <time title="创建时间：2018-10-12 21:59:38 / 修改时间：22:20:03" itemprop="dateCreated datePublished" datetime="2018-10-12T21:59:38+08:00">2018-10-12</time>
             
 
             
@@ -381,7 +381,7 @@
       
         <p>掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。</p>
 <p>这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下：</p>
-<figure class="highlight plain"><figcaption><span>-inum 1999999 -exec rm &#123;&#125; -rf \;```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">那么参数中这个1999999是什么呢？网上说这是索引节点。查看的方法是：</span><br><span class="line">```li -i</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>-inum 1999999 -exec rm &#123;&#125; -rf \;```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">那么参数中这个1999999是什么呢？网上说这是索引节点。查看的方法是：</span><br><span class="line"></span><br><span class="line">```li -i</span><br></pre></td></tr></table></figure>
 <p>这样乱码文件总算被删除了。</p>
 
       
