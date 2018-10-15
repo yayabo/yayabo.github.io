@@ -106,27 +106,30 @@
 
 
 
-  <meta name="description" content="假设我们使用的操作系统是Win10，因为Win10自带有ssh相关工具，所以省的我们自己再手动去安装客户端。 一、首先电脑端操作： 进入CMD命令行输入ssh-keygen -t rsa，生成公钥和私钥文件，碰到要求输入的时候直接回车就行。 上一步执行完成之后来到你电脑的系统盘，进入“用户”目录，然后进入你名字对应的目录，应该能看到一个.ssh的文件夹，打开后里面有两个文件，一个是id_rsa.p">
+  <meta name="description" content="打开新会话有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。">
 <meta name="keywords" content="Termux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="通过电脑ssh登录手机termux">
-<meta property="og:url" content="https://www.iniche.cn/2018/09/30/通过电脑ssh登录手机termux.html">
+<meta property="og:title" content="Termux基本用法">
+<meta property="og:url" content="https://www.iniche.cn/2018-09-12/Termux基本用法.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="假设我们使用的操作系统是Win10，因为Win10自带有ssh相关工具，所以省的我们自己再手动去安装客户端。 一、首先电脑端操作： 进入CMD命令行输入ssh-keygen -t rsa，生成公钥和私钥文件，碰到要求输入的时候直接回车就行。 上一步执行完成之后来到你电脑的系统盘，进入“用户”目录，然后进入你名字对应的目录，应该能看到一个.ssh的文件夹，打开后里面有两个文件，一个是id_rsa.p">
+<meta property="og:description" content="打开新会话有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://www.iniche.cn/2018/09/30/通过电脑ssh登录手机termux/登录到手机Termux了.png">
-<meta property="og:updated_time" content="2018-10-15T07:14:30.374Z">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-12/Termux基本用法/termux侧划出session.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-12/Termux基本用法/termux选择session.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-12/Termux基本用法/修改session名称.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-12/Termux基本用法/修改后的session名称.png">
+<meta property="og:updated_time" content="2018-10-12T10:02:31.530Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="通过电脑ssh登录手机termux">
-<meta name="twitter:description" content="假设我们使用的操作系统是Win10，因为Win10自带有ssh相关工具，所以省的我们自己再手动去安装客户端。 一、首先电脑端操作： 进入CMD命令行输入ssh-keygen -t rsa，生成公钥和私钥文件，碰到要求输入的时候直接回车就行。 上一步执行完成之后来到你电脑的系统盘，进入“用户”目录，然后进入你名字对应的目录，应该能看到一个.ssh的文件夹，打开后里面有两个文件，一个是id_rsa.p">
-<meta name="twitter:image" content="https://www.iniche.cn/2018/09/30/通过电脑ssh登录手机termux/登录到手机Termux了.png">
+<meta name="twitter:title" content="Termux基本用法">
+<meta name="twitter:description" content="打开新会话有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。">
+<meta name="twitter:image" content="https://www.iniche.cn/2018-09-12/Termux基本用法/termux侧划出session.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.iniche.cn/2018/09/30/通过电脑ssh登录手机termux.html"/>
+  <link rel="canonical" href="https://www.iniche.cn/2018-09-12/Termux基本用法.html"/>
 
 
 
@@ -136,7 +139,7 @@
   };
 </script>
 
-  <title>通过电脑ssh登录手机termux | 久智网</title>
+  <title>Termux基本用法 | 久智网</title>
   
 
 
@@ -301,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/09/30/通过电脑ssh登录手机termux.html">
+    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018-09-12/Termux基本用法.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="掌叔">
@@ -318,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">通过电脑ssh登录手机termux
+          <h1 class="post-title" itemprop="name headline">Termux基本用法
               
             
           </h1>
@@ -343,7 +346,7 @@
                 
               
 
-              <time title="创建时间：2018-09-30 09:18:51" itemprop="dateCreated datePublished" datetime="2018-09-30T09:18:51+08:00">2018-09-30</time>
+              <time title="创建时间：2018-09-12 10:31:18" itemprop="dateCreated datePublished" datetime="2018-09-12T10:31:18+08:00">2018-09-12</time>
             
 
             
@@ -360,7 +363,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-10-15 15:14:30" itemprop="dateModified" datetime="2018-10-15T15:14:30+08:00">2018-10-15</time>
+                <time title="修改时间：2018-10-12 18:02:31" itemprop="dateModified" datetime="2018-10-12T18:02:31+08:00">2018-10-12</time>
               
             
           </span>
@@ -411,26 +414,16 @@
       
 
       
-        <p>假设我们使用的操作系统是Win10，因为Win10自带有ssh相关工具，所以省的我们自己再手动去安装客户端。</p>
-<h2 id="一、首先电脑端操作："><a href="#一、首先电脑端操作：" class="headerlink" title="一、首先电脑端操作："></a>一、首先电脑端操作：</h2><ol>
-<li>进入CMD命令行输入<code>ssh-keygen -t rsa</code>，生成公钥和私钥文件，碰到要求输入的时候直接回车就行。</li>
-<li>上一步执行完成之后来到你电脑的系统盘，进入“用户”目录，然后进入你名字对应的目录，应该能看到一个.ssh的文件夹，打开后里面有两个文件，一个是id_rsa.pub这个是你的公钥，一个是id_rsa这个是你的私钥。</li>
-<li>把id_rsa.pub公钥文件传输到你的手机download文件夹里。</li>
-</ol>
-<h2 id="二、然后我们转到手机上继续操作："><a href="#二、然后我们转到手机上继续操作：" class="headerlink" title="二、然后我们转到手机上继续操作："></a>二、然后我们转到手机上继续操作：</h2><ol>
-<li>在termux上安装openssh，输入<code>pkg install openssh</code>。</li>
-<li>为了Termux能读出我们手机上的download文件夹，需要执行<code>termux-setup-storage</code>命令。现在我们的download文件夹就被映射到了~/storage/downloads。</li>
-<li>然后我们通过cat命令把download文件夹里面的公钥文件内容写到authorized_keys文件里，执行如下命令，<code>cat ~/storage/downloads/id\_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</code>。</li>
-<li>上面三部操作完之后现在可以启动手机上ssh服务了，执行sshd命令。</li>
-<li>接下来查看手机的ip地址，输入ifconfig -a，可以看到你手机的ip地址形如192.168.1.2，记下来。</li>
-<li>再查看Termux用户名，输入whoami，能看到形如u0_a82，就是你的用户名，记下来。</li>
-</ol>
-<p>三、继续回到电脑上操作：</p>
-<ol>
-<li>输入<code>ssh u0_a82@192.168.1.2 -p 8022</code>，然后一路回车，即可登录到你手机的Termux了。</li>
-</ol>
-<p>成功登录后就能看到这个样子： </p>
-<img src="/2018/09/30/通过电脑ssh登录手机termux/登录到手机Termux了.png" title="登录到手机Termux了">
+        <h2 id="打开新会话"><a href="#打开新会话" class="headerlink" title="打开新会话"></a>打开新会话</h2><p>有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：</p>
+<img src="/2018-09-12/Termux基本用法/termux侧划出session.png" title="termux侧划出session">
+<p>然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。</p>
+<img src="/2018-09-12/Termux基本用法/termux选择session.png" title="termux选择session">
+<p>不过[1][2]容易忘记是什么意思。我们也可以改成我们想要的名字。方法是长按[1]或者[2]，然后输入你要的名称，例如输入PHP。</p>
+<img src="/2018-09-12/Termux基本用法/修改session名称.png" title="修改session名称">
+<p>这样我们就能很清楚的分辨出哪一个会话是干什么的了。比如下面一个是PHP一个是MySql，一目了然。</p>
+<img src="/2018-09-12/Termux基本用法/修改后的session名称.png" title="修改后的session名称">
+<h2 id="开关拓展键盘"><a href="#开关拓展键盘" class="headerlink" title="开关拓展键盘"></a>开关拓展键盘</h2><p>我们都知道系统自带的输入法其实并不适合于开发人员。缺少了太多的按键。不过好在Termux替我们想到了这点，它自带一个拓展键盘，支持常用的ESC、TAB、CTRL、ATL以及方向键。开关拓展键盘的方法就是右划出的界面长按“KEYBOARD”。</p>
+
       
     </div>
 
@@ -463,8 +456,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/22/掌叔的第一部诺基亚手机NOKIA3510.html" rel="next" title="掌叔的第一部诺基亚手机NOKIA3510">
-                <i class="fa fa-chevron-left"></i> 掌叔的第一部诺基亚手机NOKIA3510
+              <a href="/2018-09-11/Android系统上的Linux命令行环境Termux.html" rel="next" title="Android系统上的Linux命令行环境Termux">
+                <i class="fa fa-chevron-left"></i> Android系统上的Linux命令行环境Termux
               </a>
             
           </div>
@@ -473,8 +466,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/10/10/在Termux上安装Hexo博客系统.html" rel="prev" title="在Termux上安装Hexo博客系统">
-                在Termux上安装Hexo博客系统 <i class="fa fa-chevron-right"></i>
+              <a href="/2018-09-12/使用PAMP在塞班S60手机上运行PHP、Apache和MySql.html" rel="prev" title="使用PAMP在塞班S60手机上运行PHP、Apache和MySql">
+                使用PAMP在塞班S60手机上运行PHP、Apache和MySql <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -646,7 +639,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、首先电脑端操作："><span class="nav-number">1.</span> <span class="nav-text">一、首先电脑端操作：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、然后我们转到手机上继续操作："><span class="nav-number">2.</span> <span class="nav-text">二、然后我们转到手机上继续操作：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#打开新会话"><span class="nav-number">1.</span> <span class="nav-text">打开新会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开关拓展键盘"><span class="nav-number">2.</span> <span class="nav-text">开关拓展键盘</span></a></li></ol></div>
             
 
           </div>

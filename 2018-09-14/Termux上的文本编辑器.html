@@ -106,25 +106,28 @@
 
 
 
-  <meta name="description" content="掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。 这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下： 1find -inum 1999999 -exec rm &amp;#123;&amp;#125; -rf \; 那么参数中这个1999999是什么呢？网上说这是索引节点。查看它的方法">
-<meta name="keywords" content="Termux,Linux">
+  <meta name="description" content="Termux上有至少两款文本编辑器，一个是大名鼎鼎的VIM，另一个就是nano。前者功能强大但上手较为复杂，后者功能少但是使用简单，比较符合用惯了普通文本编辑器的同学。今天就来给大家讲讲nano的安装和基本用法。 首先自然是安装： pkg install nano 装好之后输入nano打开编辑界面如图：  现在就可以像用电脑上的记事本一样输入你要的内容了，输入结束后用ctrl+o保存。 对于我们做">
+<meta name="keywords" content="Termux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux系统删除乱码文件夹">
-<meta property="og:url" content="https://www.iniche.cn/2018/10/12/Linux系统删除乱码文件夹.html">
+<meta property="og:title" content="Termux上的文本编辑器">
+<meta property="og:url" content="https://www.iniche.cn/2018-09-14/Termux上的文本编辑器.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。 这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下： 1find -inum 1999999 -exec rm &amp;#123;&amp;#125; -rf \; 那么参数中这个1999999是什么呢？网上说这是索引节点。查看它的方法">
+<meta property="og:description" content="Termux上有至少两款文本编辑器，一个是大名鼎鼎的VIM，另一个就是nano。前者功能强大但上手较为复杂，后者功能少但是使用简单，比较符合用惯了普通文本编辑器的同学。今天就来给大家讲讲nano的安装和基本用法。 首先自然是安装： pkg install nano 装好之后输入nano打开编辑界面如图：  现在就可以像用电脑上的记事本一样输入你要的内容了，输入结束后用ctrl+o保存。 对于我们做">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-12T14:26:42.391Z">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-14/Termux上的文本编辑器/nano界面.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-14/Termux上的文本编辑器/nano关键字高亮.png">
+<meta property="og:updated_time" content="2018-10-15T07:33:19.276Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux系统删除乱码文件夹">
-<meta name="twitter:description" content="掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。 这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下： 1find -inum 1999999 -exec rm &amp;#123;&amp;#125; -rf \; 那么参数中这个1999999是什么呢？网上说这是索引节点。查看它的方法">
+<meta name="twitter:title" content="Termux上的文本编辑器">
+<meta name="twitter:description" content="Termux上有至少两款文本编辑器，一个是大名鼎鼎的VIM，另一个就是nano。前者功能强大但上手较为复杂，后者功能少但是使用简单，比较符合用惯了普通文本编辑器的同学。今天就来给大家讲讲nano的安装和基本用法。 首先自然是安装： pkg install nano 装好之后输入nano打开编辑界面如图：  现在就可以像用电脑上的记事本一样输入你要的内容了，输入结束后用ctrl+o保存。 对于我们做">
+<meta name="twitter:image" content="https://www.iniche.cn/2018-09-14/Termux上的文本编辑器/nano界面.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.iniche.cn/2018/10/12/Linux系统删除乱码文件夹.html"/>
+  <link rel="canonical" href="https://www.iniche.cn/2018-09-14/Termux上的文本编辑器.html"/>
 
 
 
@@ -134,7 +137,7 @@
   };
 </script>
 
-  <title>Linux系统删除乱码文件夹 | 久智网</title>
+  <title>Termux上的文本编辑器 | 久智网</title>
   
 
 
@@ -299,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/10/12/Linux系统删除乱码文件夹.html">
+    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018-09-14/Termux上的文本编辑器.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="掌叔">
@@ -316,7 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux系统删除乱码文件夹
+          <h1 class="post-title" itemprop="name headline">Termux上的文本编辑器
               
             
           </h1>
@@ -341,16 +344,46 @@
                 
               
 
-              <time title="创建时间：2018-10-12 21:59:38 / 修改时间：22:26:42" itemprop="dateCreated datePublished" datetime="2018-10-12T21:59:38+08:00">2018-10-12</time>
+              <time title="创建时间：2018-09-14 16:23:55" itemprop="dateCreated datePublished" datetime="2018-09-14T16:23:55+08:00">2018-09-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-15 15:33:19" itemprop="dateModified" datetime="2018-10-15T15:33:19+08:00">2018-10-15</time>
               
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/手机上编程/" itemprop="url" rel="index"><span itemprop="name">手机上编程</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -379,13 +412,10 @@
       
 
       
-        <p>掌叔在使用Termux的unzip命令解压从Windows系统传过来的zip压缩文件时，碰到了令人郁闷的乱码问题。</p>
-<p>这种情况是无法用rm命令删除的…，于是上网百度了一下，不少人碰到了这个问题，好在前人已经解决了这个问题，方法如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find -inum 1999999 -exec rm &#123;&#125; -rf \;</span><br></pre></td></tr></table></figure>
-<p>那么参数中这个1999999是什么呢？网上说这是索引节点。查看它的方法是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -i</span><br></pre></td></tr></table></figure>
-<p>这样乱码文件总算被删除了。</p>
-
+        <p>Termux上有至少两款文本编辑器，一个是大名鼎鼎的VIM，另一个就是nano。前者功能强大但上手较为复杂，后者功能少但是使用简单，比较符合用惯了普通文本编辑器的同学。今天就来给大家讲讲nano的安装和基本用法。 首先自然是安装： <code>pkg install nano</code> 装好之后输入nano打开编辑界面如图：</p>
+<img src="/2018-09-14/Termux上的文本编辑器/nano界面.png" title="nano界面">
+<p>现在就可以像用电脑上的记事本一样输入你要的内容了，输入结束后用ctrl+o保存。 对于我们做开发的小伙伴来说需要的关键字高亮nano也是支持的，例如我们打开本地的一个php文件，看已经高亮显示了：）</p>
+<img src="/2018-09-14/Termux上的文本编辑器/nano关键字高亮.png" title="nano关键字高亮">
       
     </div>
 
@@ -407,8 +437,6 @@
           
             <a href="/tags/Termux/" rel="tag"># Termux</a>
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
-          
         </div>
       
 
@@ -420,8 +448,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/10/在Termux上安装Hexo博客系统.html" rel="next" title="在Termux上安装Hexo博客系统">
-                <i class="fa fa-chevron-left"></i> 在Termux上安装Hexo博客系统
+              <a href="/2018-09-13/Termux扩展之API.html" rel="next" title="Termux扩展之API">
+                <i class="fa fa-chevron-left"></i> Termux扩展之API
               </a>
             
           </div>
@@ -430,8 +458,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/10/13/使用ftp客户端连接手机Termux.html" rel="prev" title="使用ftp客户端连接手机Termux">
-                使用ftp客户端连接手机Termux <i class="fa fa-chevron-right"></i>
+              <a href="/2018-09-14/使用Cordova开发黑莓BlackBerry10应用.html" rel="prev" title="使用Cordova开发黑莓BlackBerry10应用">
+                使用Cordova开发黑莓BlackBerry10应用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

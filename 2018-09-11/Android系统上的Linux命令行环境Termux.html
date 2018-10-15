@@ -106,25 +106,28 @@
 
 
 
-  <meta name="description" content="我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。 还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。 好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令： 1tcpsv">
+  <meta name="description" content="Termux是一款能够在Android系统上运行的小型Linux环境。只需要安装一个APK文件就能让你的手机立马成为Linux主机，从而变身学习Linux的利器。 用过Linux的同学都知道，要用好Linux，命令行知识是少不了要学的。包括软件安装、系统更新等等操作都需要通过一行一行的命令来完成。 那么今天就给大家大致演示一下通过Termux来安装Nodejs和PHP的过程。 1、首先下载安装Te">
 <meta name="keywords" content="Termux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用ftp客户端连接手机Termux">
-<meta property="og:url" content="https://www.iniche.cn/2018/10/13/使用ftp客户端连接手机Termux.html">
+<meta property="og:title" content="Android系统上的Linux命令行环境Termux">
+<meta property="og:url" content="https://www.iniche.cn/2018-09-11/Android系统上的Linux命令行环境Termux.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。 还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。 好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令： 1tcpsv">
+<meta property="og:description" content="Termux是一款能够在Android系统上运行的小型Linux环境。只需要安装一个APK文件就能让你的手机立马成为Linux主机，从而变身学习Linux的利器。 用过Linux的同学都知道，要用好Linux，命令行知识是少不了要学的。包括软件安装、系统更新等等操作都需要通过一行一行的命令来完成。 那么今天就给大家大致演示一下通过Termux来安装Nodejs和PHP的过程。 1、首先下载安装Te">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-13T13:38:48.622Z">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-11/Android系统上的Linux命令行环境Termux/Termux.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-11/Android系统上的Linux命令行环境Termux/Termux-NodeJs-PHP.png">
+<meta property="og:updated_time" content="2018-10-12T09:56:14.650Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用ftp客户端连接手机Termux">
-<meta name="twitter:description" content="我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。 还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。 好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令： 1tcpsv">
+<meta name="twitter:title" content="Android系统上的Linux命令行环境Termux">
+<meta name="twitter:description" content="Termux是一款能够在Android系统上运行的小型Linux环境。只需要安装一个APK文件就能让你的手机立马成为Linux主机，从而变身学习Linux的利器。 用过Linux的同学都知道，要用好Linux，命令行知识是少不了要学的。包括软件安装、系统更新等等操作都需要通过一行一行的命令来完成。 那么今天就给大家大致演示一下通过Termux来安装Nodejs和PHP的过程。 1、首先下载安装Te">
+<meta name="twitter:image" content="https://www.iniche.cn/2018-09-11/Android系统上的Linux命令行环境Termux/Termux.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.iniche.cn/2018/10/13/使用ftp客户端连接手机Termux.html"/>
+  <link rel="canonical" href="https://www.iniche.cn/2018-09-11/Android系统上的Linux命令行环境Termux.html"/>
 
 
 
@@ -134,7 +137,7 @@
   };
 </script>
 
-  <title>使用ftp客户端连接手机Termux | 久智网</title>
+  <title>Android系统上的Linux命令行环境Termux | 久智网</title>
   
 
 
@@ -299,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/10/13/使用ftp客户端连接手机Termux.html">
+    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018-09-11/Android系统上的Linux命令行环境Termux.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="掌叔">
@@ -316,7 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用ftp客户端连接手机Termux
+          <h1 class="post-title" itemprop="name headline">Android系统上的Linux命令行环境Termux
               
             
           </h1>
@@ -341,12 +344,24 @@
                 
               
 
-              <time title="创建时间：2018-10-13 21:03:14 / 修改时间：21:38:48" itemprop="dateCreated datePublished" datetime="2018-10-13T21:03:14+08:00">2018-10-13</time>
+              <time title="创建时间：2018-09-11 16:27:44" itemprop="dateCreated datePublished" datetime="2018-09-11T16:27:44+08:00">2018-09-11</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-12 17:56:14" itemprop="dateModified" datetime="2018-10-12T17:56:14+08:00">2018-10-12</time>
               
             
           </span>
@@ -397,12 +412,14 @@
       
 
       
-        <p>我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。</p>
-<p>还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。</p>
-<p>好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpsvd -vE 0.0.0.0 2121 ftpd -w ~/</span><br></pre></td></tr></table></figure>
-<p>2121是ftp端口号</p>
-<p>然后我们就能在电脑上通过ftp客户端，例如FileZilla来管理Termux文件夹里的文件了。如果碰到中文文件名乱码那么你需要点击文件、添加当前站点到站点管理器、字符集、强制UTF-8。</p>
+        <p>Termux是一款能够在Android系统上运行的小型Linux环境。只需要安装一个APK文件就能让你的手机立马成为Linux主机，从而变身学习Linux的利器。</p>
+<p>用过Linux的同学都知道，要用好Linux，命令行知识是少不了要学的。包括软件安装、系统更新等等操作都需要通过一行一行的命令来完成。 那么今天就给大家大致演示一下通过Termux来安装Nodejs和PHP的过程。</p>
+<p>1、首先下载安装Termux（<a href="https://f-droid.org/repo/com.termux_64.apk" target="_blank" rel="noopener">点击这里下载</a>），启动之后会有一个几十秒的初始化过程，初始化之后就会出现如下界面：</p>
+<img src="/2018-09-11/Android系统上的Linux命令行环境Termux/Termux.png" title="Termux">
+<p>2、输入apt update回车，更新应用源。更新之后一般会提示有哪些软件可以更新了。这时候需要执行pkg upgrade来更新一下软件。 接下来我们来安装nodejs和php。 输入如下命令：（注意每一行命令敲完都要回车）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pkg install nodejs</span><br><span class="line">pkg install php</span><br></pre></td></tr></table></figure></p>
+<p>系统会自动帮你把这个两个软件安装好，最后执行如下两个命令来看一下安装好的Nodejs和PHP的版本。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">php -v</span><br></pre></td></tr></table></figure></p>
+<img src="/2018-09-11/Android系统上的Linux命令行环境Termux/Termux-NodeJs-PHP.png" title="Termux-NodeJs-PHP">
+<p>可以看到nodejs的版本是8.11.4，php的版本是7.2.9都是相当新的版本，其实termux里面的软件版本更新是非常频繁的，大家可以时不时的apt update一下看看。 最后我们现在就可以愉快的在手机上学习Linux啦~</p>
 
       
     </div>
@@ -436,15 +453,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/12/Linux系统删除乱码文件夹.html" rel="next" title="Linux系统删除乱码文件夹">
-                <i class="fa fa-chevron-left"></i> Linux系统删除乱码文件夹
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018-09-12/Termux基本用法.html" rel="prev" title="Termux基本用法">
+                Termux基本用法 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>

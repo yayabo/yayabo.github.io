@@ -106,28 +106,32 @@
 
 
 
-  <meta name="description" content="Termux除了是一个超小型的Linux环境可供我们用来学习Linux知识外，还有一些额外的好玩的东西，例如Termux:API。 要使用API首先要安装一个包，输入下面命令：  1pkg install termux-api 安装好之后我们先来试试，例如看看我们的电池状态怎么样。 1termux-battery-status 执行以上命令出现如下返回值，JSON格式的。可以看到电池状态是健康、剩">
-<meta name="keywords" content="Termux">
+  <meta name="description" content="前面掌叔给大家简要介绍了通过安装Momentics IDE和Cordova以命令行的方式进行bb10应用的开发编译。因为全程涉及到的安装和命令步骤过于繁琐，估计已经有一部分同学望而却步了。那么有没有一种界面化、操作简单的方式呢？答案是有的。今天掌叔就带大家一起来看看黑莓官方的bb10应用开发工具：WebWorks SDK。  首先我们先到黑莓开发者官网下载WebWorks SDK安装包。 掌叔的系">
+<meta name="keywords" content="黑莓,BB10">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Termux扩展之API">
-<meta property="og:url" content="https://www.iniche.cn/2018/09/13/Termux扩展之API.html">
+<meta property="og:title" content="使用WebWorks SDK开发Blackberry10应用">
+<meta property="og:url" content="https://www.iniche.cn/2018-09-19/使用WebWorks SDK开发Blackberry10应用.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="Termux除了是一个超小型的Linux环境可供我们用来学习Linux知识外，还有一些额外的好玩的东西，例如Termux:API。 要使用API首先要安装一个包，输入下面命令：  1pkg install termux-api 安装好之后我们先来试试，例如看看我们的电池状态怎么样。 1termux-battery-status 执行以上命令出现如下返回值，JSON格式的。可以看到电池状态是健康、剩">
+<meta property="og:description" content="前面掌叔给大家简要介绍了通过安装Momentics IDE和Cordova以命令行的方式进行bb10应用的开发编译。因为全程涉及到的安装和命令步骤过于繁琐，估计已经有一部分同学望而却步了。那么有没有一种界面化、操作简单的方式呢？答案是有的。今天掌叔就带大家一起来看看黑莓官方的bb10应用开发工具：WebWorks SDK。  首先我们先到黑莓开发者官网下载WebWorks SDK安装包。 掌叔的系">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://www.iniche.cn/2018/09/13/Termux扩展之API/termux-api-电池状态.png">
-<meta property="og:image" content="https://www.iniche.cn/2018/09/13/Termux扩展之API/termux-查看摄像头信息.png">
-<meta property="og:updated_time" content="2018-10-13T12:57:05.622Z">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/webworks2_2_gold.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/启动webwordkssdk.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/创建项目.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/配置项目.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/编译安装.png">
+<meta property="og:image" content="https://www.iniche.cn/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/启动成功.jpg">
+<meta property="og:updated_time" content="2018-10-15T07:42:44.196Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Termux扩展之API">
-<meta name="twitter:description" content="Termux除了是一个超小型的Linux环境可供我们用来学习Linux知识外，还有一些额外的好玩的东西，例如Termux:API。 要使用API首先要安装一个包，输入下面命令：  1pkg install termux-api 安装好之后我们先来试试，例如看看我们的电池状态怎么样。 1termux-battery-status 执行以上命令出现如下返回值，JSON格式的。可以看到电池状态是健康、剩">
-<meta name="twitter:image" content="https://www.iniche.cn/2018/09/13/Termux扩展之API/termux-api-电池状态.png">
+<meta name="twitter:title" content="使用WebWorks SDK开发Blackberry10应用">
+<meta name="twitter:description" content="前面掌叔给大家简要介绍了通过安装Momentics IDE和Cordova以命令行的方式进行bb10应用的开发编译。因为全程涉及到的安装和命令步骤过于繁琐，估计已经有一部分同学望而却步了。那么有没有一种界面化、操作简单的方式呢？答案是有的。今天掌叔就带大家一起来看看黑莓官方的bb10应用开发工具：WebWorks SDK。  首先我们先到黑莓开发者官网下载WebWorks SDK安装包。 掌叔的系">
+<meta name="twitter:image" content="https://www.iniche.cn/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/webworks2_2_gold.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.iniche.cn/2018/09/13/Termux扩展之API.html"/>
+  <link rel="canonical" href="https://www.iniche.cn/2018-09-19/使用WebWorks SDK开发Blackberry10应用.html"/>
 
 
 
@@ -137,7 +141,7 @@
   };
 </script>
 
-  <title>Termux扩展之API | 久智网</title>
+  <title>使用WebWorks SDK开发Blackberry10应用 | 久智网</title>
   
 
 
@@ -302,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/09/13/Termux扩展之API.html">
+    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018-09-19/使用WebWorks SDK开发Blackberry10应用.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="掌叔">
@@ -319,7 +323,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Termux扩展之API
+          <h1 class="post-title" itemprop="name headline">使用WebWorks SDK开发Blackberry10应用
               
             
           </h1>
@@ -344,7 +348,7 @@
                 
               
 
-              <time title="创建时间：2018-09-13 15:14:47" itemprop="dateCreated datePublished" datetime="2018-09-13T15:14:47+08:00">2018-09-13</time>
+              <time title="创建时间：2018-09-19 16:24:15" itemprop="dateCreated datePublished" datetime="2018-09-19T16:24:15+08:00">2018-09-19</time>
             
 
             
@@ -361,7 +365,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-10-13 20:57:05" itemprop="dateModified" datetime="2018-10-13T20:57:05+08:00">2018-10-13</time>
+                <time title="修改时间：2018-10-15 15:42:44" itemprop="dateModified" datetime="2018-10-15T15:42:44+08:00">2018-10-15</time>
               
             
           </span>
@@ -378,7 +382,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/手机上编程/" itemprop="url" rel="index"><span itemprop="name">手机上编程</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/开发手机应用/" itemprop="url" rel="index"><span itemprop="name">开发手机应用</span></a></span>
 
                 
                 
@@ -412,15 +416,19 @@
       
 
       
-        <p>Termux除了是一个超小型的Linux环境可供我们用来学习Linux知识外，还有一些额外的好玩的东西，例如Termux:API。</p>
-<p>要使用API首先要安装一个包，输入下面命令： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install termux-api</span><br></pre></td></tr></table></figure>
-<p>安装好之后我们先来试试，例如看看我们的电池状态怎么样。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">termux-battery-status</span><br></pre></td></tr></table></figure>
-<p>执行以上命令出现如下返回值，JSON格式的。可以看到电池状态是健康、剩余电量92%，充电状态是交流充电中，电池温度是33度。</p>
-<img src="/2018/09/13/Termux扩展之API/termux-api-电池状态.png" title="termux-api-电池状态">
-<p>再来看看手机摄像头的信息，执行<code>termux-camera-info</code>可以获得以下信息：</p>
-<img src="/2018/09/13/Termux扩展之API/termux-查看摄像头信息.png" title="termux-查看摄像头信息">
+        <p>前面掌叔给大家简要介绍了通过安装Momentics IDE和Cordova以命令行的方式进行bb10应用的开发编译。因为全程涉及到的安装和命令步骤过于繁琐，估计已经有一部分同学望而却步了。那么有没有一种界面化、操作简单的方式呢？答案是有的。今天掌叔就带大家一起来看看黑莓官方的bb10应用开发工具：WebWorks SDK。</p>
+<img src="/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/webworks2_2_gold.png" title="webworks2_2_gold">
+<p>首先我们先到黑莓开发者官网下载<a href="http://developer.blackberry.com/html5/download/" target="_blank" rel="noopener">WebWorks SDK安装包</a>。</p>
+<p>掌叔的系统是windows10，安装起来一切顺利。装好之后我们点击图标它会启动一个命令行窗口同时在你的浏览器里打开如图界面：</p>
+<img src="/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/启动webwordkssdk.png" title="启动webwordkssdk">
+<p>接下来我们一步一步根据提示进行操作。 1、创建项目。</p>
+<img src="/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/创建项目.png" title="创建项目">
+<p>2、配置项目，这里可以设置图标、启动图、开发者信息以及一些权限配置。</p>
+<img src="/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/配置项目.png" title="配置项目">
+<p>3、接下来就可以编译安装了，点击左侧菜单的建立。输入手机锁屏密码和你令牌的密码。之后点击“建立和安装”。</p>
+<img src="/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/编译安装.png" title="编译安装">
+<p>一切顺利的话就能看到你的手机已经启动这个应用了。</p>
+<img src="/2018-09-19/使用WebWorks%20SDK开发Blackberry10应用/启动成功.jpg" title="启动成功">
       
     </div>
 
@@ -440,7 +448,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Termux/" rel="tag"># Termux</a>
+            <a href="/tags/黑莓/" rel="tag"># 黑莓</a>
+          
+            <a href="/tags/BB10/" rel="tag"># BB10</a>
           
         </div>
       
@@ -453,8 +463,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/12/使用PAMP在塞班S60手机上运行PHP、Apache和MySql.html" rel="next" title="使用PAMP在塞班S60手机上运行PHP、Apache和MySql">
-                <i class="fa fa-chevron-left"></i> 使用PAMP在塞班S60手机上运行PHP、Apache和MySql
+              <a href="/2018-09-18/搭载KaiOS的手机JioPhone2手机已经发布.html" rel="next" title="搭载KaiOS的手机JioPhone2手机已经发布">
+                <i class="fa fa-chevron-left"></i> 搭载KaiOS的手机JioPhone2手机已经发布
               </a>
             
           </div>
@@ -463,8 +473,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/14/Termux上的文本编辑器.html" rel="prev" title="Termux上的文本编辑器">
-                Termux上的文本编辑器 <i class="fa fa-chevron-right"></i>
+              <a href="/2018-09-22/掌叔的第一部诺基亚手机NOKIA3510.html" rel="prev" title="掌叔的第一部诺基亚手机NOKIA3510">
+                掌叔的第一部诺基亚手机NOKIA3510 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
