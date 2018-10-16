@@ -106,28 +106,30 @@
 
 
 
-  <meta name="description" content="前不久掌叔的黑莓Z10通过检查系统更新刚刚升级到了10.3.3.1435，今天通过bblink检查更新的时候又发现了新的版本，版本号是10.3.3.2137。  虽然从版本号看应该是属于bug修复一类的，但是在BB10生命周期已近尾声的时候，黑莓仍旧没有忘记老用户，这一点还是让掌叔十分感动的。  手里有Z10的小伙伴赶紧清清手机上的灰拿出来充充电升级吧。">
-<meta name="keywords" content="BB10,黑莓">
+  <meta name="description" content="打开新会话有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。">
+<meta name="keywords" content="Termux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="黑莓Z10又获系统更新">
-<meta property="og:url" content="https://www.iniche.cn/2018/09/黑莓Z10又获系统更新.html">
+<meta property="og:title" content="Termux基本用法">
+<meta property="og:url" content="https://www.iniche.cn/blogs/Termux基本用法.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="前不久掌叔的黑莓Z10通过检查系统更新刚刚升级到了10.3.3.1435，今天通过bblink检查更新的时候又发现了新的版本，版本号是10.3.3.2137。  虽然从版本号看应该是属于bug修复一类的，但是在BB10生命周期已近尾声的时候，黑莓仍旧没有忘记老用户，这一点还是让掌叔十分感动的。  手里有Z10的小伙伴赶紧清清手机上的灰拿出来充充电升级吧。">
+<meta property="og:description" content="打开新会话有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://www.iniche.cn/2018/09/黑莓Z10又获系统更新/Z10升级提示.png">
-<meta property="og:image" content="https://www.iniche.cn/2018/09/黑莓Z10又获系统更新/正在安装更新.png">
-<meta property="og:updated_time" content="2018-10-15T07:58:49.466Z">
+<meta property="og:image" content="https://www.iniche.cn/blogs/Termux基本用法/termux侧划出session.png">
+<meta property="og:image" content="https://www.iniche.cn/blogs/Termux基本用法/termux选择session.png">
+<meta property="og:image" content="https://www.iniche.cn/blogs/Termux基本用法/修改session名称.png">
+<meta property="og:image" content="https://www.iniche.cn/blogs/Termux基本用法/修改后的session名称.png">
+<meta property="og:updated_time" content="2018-10-12T10:02:31.530Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="黑莓Z10又获系统更新">
-<meta name="twitter:description" content="前不久掌叔的黑莓Z10通过检查系统更新刚刚升级到了10.3.3.1435，今天通过bblink检查更新的时候又发现了新的版本，版本号是10.3.3.2137。  虽然从版本号看应该是属于bug修复一类的，但是在BB10生命周期已近尾声的时候，黑莓仍旧没有忘记老用户，这一点还是让掌叔十分感动的。  手里有Z10的小伙伴赶紧清清手机上的灰拿出来充充电升级吧。">
-<meta name="twitter:image" content="https://www.iniche.cn/2018/09/黑莓Z10又获系统更新/Z10升级提示.png">
+<meta name="twitter:title" content="Termux基本用法">
+<meta name="twitter:description" content="打开新会话有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。">
+<meta name="twitter:image" content="https://www.iniche.cn/blogs/Termux基本用法/termux侧划出session.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.iniche.cn/2018/09/黑莓Z10又获系统更新.html"/>
+  <link rel="canonical" href="https://www.iniche.cn/blogs/Termux基本用法.html"/>
 
 
 
@@ -137,7 +139,7 @@
   };
 </script>
 
-  <title>黑莓Z10又获系统更新 | 久智网</title>
+  <title>Termux基本用法 | 久智网</title>
   
 
 
@@ -302,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/09/黑莓Z10又获系统更新.html">
+    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/blogs/Termux基本用法.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="掌叔">
@@ -319,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">黑莓Z10又获系统更新
+          <h1 class="post-title" itemprop="name headline">Termux基本用法
               
             
           </h1>
@@ -344,7 +346,7 @@
                 
               
 
-              <time title="创建时间：2018-09-17 09:20:30" itemprop="dateCreated datePublished" datetime="2018-09-17T09:20:30+08:00">2018-09-17</time>
+              <time title="创建时间：2018-09-12 10:31:18" itemprop="dateCreated datePublished" datetime="2018-09-12T10:31:18+08:00">2018-09-12</time>
             
 
             
@@ -361,7 +363,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-10-15 15:58:49" itemprop="dateModified" datetime="2018-10-15T15:58:49+08:00">2018-10-15</time>
+                <time title="修改时间：2018-10-12 18:02:31" itemprop="dateModified" datetime="2018-10-12T18:02:31+08:00">2018-10-12</time>
               
             
           </span>
@@ -378,7 +380,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/小众资讯/" itemprop="url" rel="index"><span itemprop="name">小众资讯</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/手机上编程/" itemprop="url" rel="index"><span itemprop="name">手机上编程</span></a></span>
 
                 
                 
@@ -412,11 +414,15 @@
       
 
       
-        <p>前不久掌叔的黑莓Z10通过检查系统更新刚刚升级到了10.3.3.1435，今天通过bblink检查更新的时候又发现了新的版本，版本号是10.3.3.2137。</p>
-<img src="/2018/09/黑莓Z10又获系统更新/Z10升级提示.png" title="Z10升级提示">
-<p>虽然从版本号看应该是属于bug修复一类的，但是在BB10生命周期已近尾声的时候，黑莓仍旧没有忘记老用户，这一点还是让掌叔十分感动的。</p>
-<img src="/2018/09/黑莓Z10又获系统更新/正在安装更新.png" title="正在安装更新">
-<p>手里有Z10的小伙伴赶紧清清手机上的灰拿出来充充电升级吧。</p>
+        <h2 id="打开新会话"><a href="#打开新会话" class="headerlink" title="打开新会话"></a>打开新会话</h2><p>有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：</p>
+<img src="/blogs/Termux基本用法/termux侧划出session.png" title="termux侧划出session">
+<p>然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。</p>
+<img src="/blogs/Termux基本用法/termux选择session.png" title="termux选择session">
+<p>不过[1][2]容易忘记是什么意思。我们也可以改成我们想要的名字。方法是长按[1]或者[2]，然后输入你要的名称，例如输入PHP。</p>
+<img src="/blogs/Termux基本用法/修改session名称.png" title="修改session名称">
+<p>这样我们就能很清楚的分辨出哪一个会话是干什么的了。比如下面一个是PHP一个是MySql，一目了然。</p>
+<img src="/blogs/Termux基本用法/修改后的session名称.png" title="修改后的session名称">
+<h2 id="开关拓展键盘"><a href="#开关拓展键盘" class="headerlink" title="开关拓展键盘"></a>开关拓展键盘</h2><p>我们都知道系统自带的输入法其实并不适合于开发人员。缺少了太多的按键。不过好在Termux替我们想到了这点，它自带一个拓展键盘，支持常用的ESC、TAB、CTRL、ATL以及方向键。开关拓展键盘的方法就是右划出的界面长按“KEYBOARD”。</p>
 
       
     </div>
@@ -437,9 +443,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/BB10/" rel="tag"># BB10</a>
-          
-            <a href="/tags/黑莓/" rel="tag"># 黑莓</a>
+            <a href="/tags/Termux/" rel="tag"># Termux</a>
           
         </div>
       
@@ -452,8 +456,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/使用Cordova开发黑莓BlackBerry10应用.html" rel="next" title="使用Cordova开发黑莓BlackBerry10应用">
-                <i class="fa fa-chevron-left"></i> 使用Cordova开发黑莓BlackBerry10应用
+              <a href="/blogs/Android系统上的Linux命令行环境Termux.html" rel="next" title="Android系统上的Linux命令行环境Termux">
+                <i class="fa fa-chevron-left"></i> Android系统上的Linux命令行环境Termux
               </a>
             
           </div>
@@ -462,8 +466,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/Lumia830迎来Win10M系统更新.html" rel="prev" title="Lumia830迎来Win10M系统更新">
-                Lumia830迎来Win10M系统更新 <i class="fa fa-chevron-right"></i>
+              <a href="/blogs/使用PAMP在塞班S60手机上运行PHP、Apache和MySql.html" rel="prev" title="使用PAMP在塞班S60手机上运行PHP、Apache和MySql">
+                使用PAMP在塞班S60手机上运行PHP、Apache和MySql <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -509,8 +513,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -616,6 +629,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#打开新会话"><span class="nav-number">1.</span> <span class="nav-text">打开新会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开关拓展键盘"><span class="nav-number">2.</span> <span class="nav-text">开关拓展键盘</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

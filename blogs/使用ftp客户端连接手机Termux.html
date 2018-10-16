@@ -106,27 +106,25 @@
 
 
 
-  <meta name="description" content="假设我们使用的操作系统是Win10，因为Win10自带有ssh相关工具，所以省的我们自己再手动去安装客户端。 一、首先电脑端操作： 进入CMD命令行输入ssh-keygen -t rsa，生成公钥和私钥文件，碰到要求输入的时候直接回车就行。 上一步执行完成之后来到你电脑的系统盘，进入“用户”目录，然后进入你名字对应的目录，应该能看到一个.ssh的文件夹，打开后里面有两个文件，一个是id_rsa.p">
+  <meta name="description" content="我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。 还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。 好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令： 1tcpsv">
 <meta name="keywords" content="Termux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="通过电脑ssh登录手机termux">
-<meta property="og:url" content="https://www.iniche.cn/2018/09/通过电脑ssh登录手机termux.html">
+<meta property="og:title" content="使用ftp客户端连接手机Termux">
+<meta property="og:url" content="https://www.iniche.cn/blogs/使用ftp客户端连接手机Termux.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="假设我们使用的操作系统是Win10，因为Win10自带有ssh相关工具，所以省的我们自己再手动去安装客户端。 一、首先电脑端操作： 进入CMD命令行输入ssh-keygen -t rsa，生成公钥和私钥文件，碰到要求输入的时候直接回车就行。 上一步执行完成之后来到你电脑的系统盘，进入“用户”目录，然后进入你名字对应的目录，应该能看到一个.ssh的文件夹，打开后里面有两个文件，一个是id_rsa.p">
+<meta property="og:description" content="我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。 还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。 好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令： 1tcpsv">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://www.iniche.cn/2018/09/通过电脑ssh登录手机termux/登录到手机Termux了.png">
-<meta property="og:updated_time" content="2018-10-15T07:14:30.374Z">
+<meta property="og:updated_time" content="2018-10-13T13:38:48.622Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="通过电脑ssh登录手机termux">
-<meta name="twitter:description" content="假设我们使用的操作系统是Win10，因为Win10自带有ssh相关工具，所以省的我们自己再手动去安装客户端。 一、首先电脑端操作： 进入CMD命令行输入ssh-keygen -t rsa，生成公钥和私钥文件，碰到要求输入的时候直接回车就行。 上一步执行完成之后来到你电脑的系统盘，进入“用户”目录，然后进入你名字对应的目录，应该能看到一个.ssh的文件夹，打开后里面有两个文件，一个是id_rsa.p">
-<meta name="twitter:image" content="https://www.iniche.cn/2018/09/通过电脑ssh登录手机termux/登录到手机Termux了.png">
+<meta name="twitter:title" content="使用ftp客户端连接手机Termux">
+<meta name="twitter:description" content="我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。 还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。 好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令： 1tcpsv">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.iniche.cn/2018/09/通过电脑ssh登录手机termux.html"/>
+  <link rel="canonical" href="https://www.iniche.cn/blogs/使用ftp客户端连接手机Termux.html"/>
 
 
 
@@ -136,7 +134,7 @@
   };
 </script>
 
-  <title>通过电脑ssh登录手机termux | 久智网</title>
+  <title>使用ftp客户端连接手机Termux | 久智网</title>
   
 
 
@@ -301,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/2018/09/通过电脑ssh登录手机termux.html">
+    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/blogs/使用ftp客户端连接手机Termux.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="掌叔">
@@ -318,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">通过电脑ssh登录手机termux
+          <h1 class="post-title" itemprop="name headline">使用ftp客户端连接手机Termux
               
             
           </h1>
@@ -343,24 +341,12 @@
                 
               
 
-              <time title="创建时间：2018-09-30 09:18:51" itemprop="dateCreated datePublished" datetime="2018-09-30T09:18:51+08:00">2018-09-30</time>
+              <time title="创建时间：2018-10-13 21:03:14 / 修改时间：21:38:48" itemprop="dateCreated datePublished" datetime="2018-10-13T21:03:14+08:00">2018-10-13</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-10-15 15:14:30" itemprop="dateModified" datetime="2018-10-15T15:14:30+08:00">2018-10-15</time>
               
             
           </span>
@@ -411,26 +397,13 @@
       
 
       
-        <p>假设我们使用的操作系统是Win10，因为Win10自带有ssh相关工具，所以省的我们自己再手动去安装客户端。</p>
-<h2 id="一、首先电脑端操作："><a href="#一、首先电脑端操作：" class="headerlink" title="一、首先电脑端操作："></a>一、首先电脑端操作：</h2><ol>
-<li>进入CMD命令行输入<code>ssh-keygen -t rsa</code>，生成公钥和私钥文件，碰到要求输入的时候直接回车就行。</li>
-<li>上一步执行完成之后来到你电脑的系统盘，进入“用户”目录，然后进入你名字对应的目录，应该能看到一个.ssh的文件夹，打开后里面有两个文件，一个是id_rsa.pub这个是你的公钥，一个是id_rsa这个是你的私钥。</li>
-<li>把id_rsa.pub公钥文件传输到你的手机download文件夹里。</li>
-</ol>
-<h2 id="二、然后我们转到手机上继续操作："><a href="#二、然后我们转到手机上继续操作：" class="headerlink" title="二、然后我们转到手机上继续操作："></a>二、然后我们转到手机上继续操作：</h2><ol>
-<li>在termux上安装openssh，输入<code>pkg install openssh</code>。</li>
-<li>为了Termux能读出我们手机上的download文件夹，需要执行<code>termux-setup-storage</code>命令。现在我们的download文件夹就被映射到了~/storage/downloads。</li>
-<li>然后我们通过cat命令把download文件夹里面的公钥文件内容写到authorized_keys文件里，执行如下命令，<code>cat ~/storage/downloads/id\_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</code>。</li>
-<li>上面三部操作完之后现在可以启动手机上ssh服务了，执行sshd命令。</li>
-<li>接下来查看手机的ip地址，输入ifconfig -a，可以看到你手机的ip地址形如192.168.1.2，记下来。</li>
-<li>再查看Termux用户名，输入whoami，能看到形如u0_a82，就是你的用户名，记下来。</li>
-</ol>
-<p>三、继续回到电脑上操作：</p>
-<ol>
-<li>输入<code>ssh u0_a82@192.168.1.2 -p 8022</code>，然后一路回车，即可登录到你手机的Termux了。</li>
-</ol>
-<p>成功登录后就能看到这个样子： </p>
-<img src="/2018/09/通过电脑ssh登录手机termux/登录到手机Termux了.png" title="登录到手机Termux了">
+        <p>我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。</p>
+<p>还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。</p>
+<p>好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpsvd -vE 0.0.0.0 2121 ftpd -w ~/</span><br></pre></td></tr></table></figure>
+<p>2121是ftp端口号</p>
+<p>然后我们就能在电脑上通过ftp客户端，例如FileZilla来管理Termux文件夹里的文件了。如果碰到中文文件名乱码那么你需要点击文件、添加当前站点到站点管理器、字符集、强制UTF-8。</p>
+
       
     </div>
 
@@ -463,8 +436,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/掌叔的第一部诺基亚手机NOKIA3510.html" rel="next" title="掌叔的第一部诺基亚手机NOKIA3510">
-                <i class="fa fa-chevron-left"></i> 掌叔的第一部诺基亚手机NOKIA3510
+              <a href="/blogs/Linux系统删除乱码文件夹.html" rel="next" title="Linux系统删除乱码文件夹">
+                <i class="fa fa-chevron-left"></i> Linux系统删除乱码文件夹
               </a>
             
           </div>
@@ -472,10 +445,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/在Termux上安装Hexo博客系统.html" rel="prev" title="在Termux上安装Hexo博客系统">
-                在Termux上安装Hexo博客系统 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -520,17 +489,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -636,22 +596,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、首先电脑端操作："><span class="nav-number">1.</span> <span class="nav-text">一、首先电脑端操作：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、然后我们转到手机上继续操作："><span class="nav-number">2.</span> <span class="nav-text">二、然后我们转到手机上继续操作：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
