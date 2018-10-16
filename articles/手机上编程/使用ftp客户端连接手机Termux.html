@@ -106,30 +106,25 @@
 
 
 
-  <meta name="description" content="打开新会话有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。">
+  <meta name="description" content="我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。 还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。 好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令： 1tcpsv">
 <meta name="keywords" content="Termux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Termux基本用法">
-<meta property="og:url" content="https://www.iniche.cn/blogs/Termux基本用法.html">
+<meta property="og:title" content="使用ftp客户端连接手机Termux">
+<meta property="og:url" content="https://www.iniche.cn/articles/手机上编程/使用ftp客户端连接手机Termux.html">
 <meta property="og:site_name" content="久智网">
-<meta property="og:description" content="打开新会话有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。">
+<meta property="og:description" content="我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。 还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。 好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令： 1tcpsv">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://www.iniche.cn/blogs/Termux基本用法/termux侧划出session.png">
-<meta property="og:image" content="https://www.iniche.cn/blogs/Termux基本用法/termux选择session.png">
-<meta property="og:image" content="https://www.iniche.cn/blogs/Termux基本用法/修改session名称.png">
-<meta property="og:image" content="https://www.iniche.cn/blogs/Termux基本用法/修改后的session名称.png">
-<meta property="og:updated_time" content="2018-10-12T10:02:31.530Z">
+<meta property="og:updated_time" content="2018-10-13T13:38:48.622Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Termux基本用法">
-<meta name="twitter:description" content="打开新会话有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：  然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。">
-<meta name="twitter:image" content="https://www.iniche.cn/blogs/Termux基本用法/termux侧划出session.png">
+<meta name="twitter:title" content="使用ftp客户端连接手机Termux">
+<meta name="twitter:description" content="我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。 还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。 好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令： 1tcpsv">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.iniche.cn/blogs/Termux基本用法.html"/>
+  <link rel="canonical" href="https://www.iniche.cn/articles/手机上编程/使用ftp客户端连接手机Termux.html"/>
 
 
 
@@ -139,7 +134,7 @@
   };
 </script>
 
-  <title>Termux基本用法 | 久智网</title>
+  <title>使用ftp客户端连接手机Termux | 久智网</title>
   
 
 
@@ -304,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/blogs/Termux基本用法.html">
+    <link itemprop="mainEntityOfPage" href="https://www.iniche.cn/articles/手机上编程/使用ftp客户端连接手机Termux.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="掌叔">
@@ -321,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Termux基本用法
+          <h1 class="post-title" itemprop="name headline">使用ftp客户端连接手机Termux
               
             
           </h1>
@@ -346,24 +341,12 @@
                 
               
 
-              <time title="创建时间：2018-09-12 10:31:18" itemprop="dateCreated datePublished" datetime="2018-09-12T10:31:18+08:00">2018-09-12</time>
+              <time title="创建时间：2018-10-13 21:03:14 / 修改时间：21:38:48" itemprop="dateCreated datePublished" datetime="2018-10-13T21:03:14+08:00">2018-10-13</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-10-12 18:02:31" itemprop="dateModified" datetime="2018-10-12T18:02:31+08:00">2018-10-12</time>
               
             
           </span>
@@ -414,15 +397,12 @@
       
 
       
-        <h2 id="打开新会话"><a href="#打开新会话" class="headerlink" title="打开新会话"></a>打开新会话</h2><p>有时候我们会需要打开一个新的命令行窗口来执行一些其它的命令，比如我们在测试Nginx+PHP+MySql/Maridb的时候就需要同时开启三个命令行窗口。那么如何操作呢？从屏幕做边缘向右划，会出现如下图界面：</p>
-<img src="/blogs/Termux基本用法/termux侧划出session.png" title="termux侧划出session">
-<p>然后点击“NEW SESSION”就能打开一个新的会话了。再执行右划的手势就能看到这里面已经有两个会话了，一个是[1]，一个是[2]。在这里点击[1]和[2]可以进行会话的切换。</p>
-<img src="/blogs/Termux基本用法/termux选择session.png" title="termux选择session">
-<p>不过[1][2]容易忘记是什么意思。我们也可以改成我们想要的名字。方法是长按[1]或者[2]，然后输入你要的名称，例如输入PHP。</p>
-<img src="/blogs/Termux基本用法/修改session名称.png" title="修改session名称">
-<p>这样我们就能很清楚的分辨出哪一个会话是干什么的了。比如下面一个是PHP一个是MySql，一目了然。</p>
-<img src="/blogs/Termux基本用法/修改后的session名称.png" title="修改后的session名称">
-<h2 id="开关拓展键盘"><a href="#开关拓展键盘" class="headerlink" title="开关拓展键盘"></a>开关拓展键盘</h2><p>我们都知道系统自带的输入法其实并不适合于开发人员。缺少了太多的按键。不过好在Termux替我们想到了这点，它自带一个拓展键盘，支持常用的ESC、TAB、CTRL、ATL以及方向键。开关拓展键盘的方法就是右划出的界面长按“KEYBOARD”。</p>
+        <p>我们有时候需要从电脑端获取Termux文件夹中的一些文件，虽然可以使用命令cp先拷贝到/storage/download/文件夹，然后通过数据线拷到电脑，但是这种方法太繁琐。</p>
+<p>还有的时候我们需要把电脑里的一些文件拷贝到Termux的文件夹里，比如我们在电脑上处理好的图片，这时候如果能用ftp客户端传输那就太方便了。</p>
+<p>好在Termux已经内置了ftp服务器，我们只需要输入下面这行命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpsvd -vE 0.0.0.0 2121 ftpd -w ~/</span><br></pre></td></tr></table></figure>
+<p>2121是ftp端口号</p>
+<p>然后我们就能在电脑上通过ftp客户端，例如FileZilla来管理Termux文件夹里的文件了。如果碰到中文文件名乱码那么你需要点击文件、添加当前站点到站点管理器、字符集、强制UTF-8。</p>
 
       
     </div>
@@ -456,8 +436,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blogs/Android系统上的Linux命令行环境Termux.html" rel="next" title="Android系统上的Linux命令行环境Termux">
-                <i class="fa fa-chevron-left"></i> Android系统上的Linux命令行环境Termux
+              <a href="/articles/uncategorized/Linux系统删除乱码文件夹.html" rel="next" title="Linux系统删除乱码文件夹">
+                <i class="fa fa-chevron-left"></i> Linux系统删除乱码文件夹
               </a>
             
           </div>
@@ -465,10 +445,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blogs/使用PAMP在塞班S60手机上运行PHP、Apache和MySql.html" rel="prev" title="使用PAMP在塞班S60手机上运行PHP、Apache和MySql">
-                使用PAMP在塞班S60手机上运行PHP、Apache和MySql <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -513,17 +489,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -629,22 +596,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#打开新会话"><span class="nav-number">1.</span> <span class="nav-text">打开新会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开关拓展键盘"><span class="nav-number">2.</span> <span class="nav-text">开关拓展键盘</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
